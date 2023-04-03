@@ -1,0 +1,27 @@
+{
+    "folders": [
+        {
+            "name": "root",
+            "path": "."
+        },
+        {
+            "name": "grid-core",
+            "path": "./grid-core"
+        },
+        {
+            "name": "grid-project",
+            "path": "./grid-project"
+        },
+        {
+            "name": "grid-server",
+            "path": "./grid-server"
+        }
+    ],
+    "settings": {
+        "files.exclude": {
+            "grid-core": true,
+            "grid-project": true,
+            "grid-server": true
+        }
+    }
+}

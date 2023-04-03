@@ -1,0 +1,9 @@
+[submodule "grid-core"]
+	path = grid-core
+	url = https://github.com/DAT2G7/grid-core
+[submodule "grid-server"]
+	path = grid-server
+	url = https://github.com/DAT2G7/grid-server
+[submodule "grid-project"]
+	path = grid-project
+	url = https://github.com/DAT2G7/grid-project
