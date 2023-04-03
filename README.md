@@ -28,3 +28,11 @@ bash ./setup.sh
 ```
 
 Alternatively it is required to cd into each sub-module and install node modules manually.
+
+## Pulling updates
+
+To get the most recent commit of all sub-modules use
+
+```bash
+git submodule update --recursive --remote
+```
