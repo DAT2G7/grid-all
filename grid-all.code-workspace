@@ -22,6 +22,9 @@
             "grid-core": true,
             "grid-project": true,
             "grid-server": true
-        }
+        },
+        "jest.disabledWorkspaceFolders": [
+            "root"
+        ]
     }
 }
