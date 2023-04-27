@@ -7,3 +7,6 @@
 [submodule "grid-project"]
 	path = grid-project
 	url = https://github.com/DAT2G7/grid-project
+[submodule "grid-extension"]
+	path = grid-extension
+	url = https://github.com/DAT2G7/grid-extension

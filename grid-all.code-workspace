@@ -13,6 +13,10 @@
             "path": "./grid-project"
         },
         {
+            "name": "grid-extension",
+            "path": "./grid-extension"
+        },
+        {
             "name": "grid-server",
             "path": "./grid-server"
         }
@@ -21,6 +25,7 @@
         "files.exclude": {
             "grid-core": true,
             "grid-project": true,
+            "grid-extension": true,
             "grid-server": true
         },
         "jest.disabledWorkspaceFolders": [
