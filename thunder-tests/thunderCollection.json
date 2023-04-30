@@ -1,0 +1,16 @@
+[
+  {
+    "_id": "8790c950-b5aa-46aa-a89f-f5c949b86116",
+    "colName": "Grid server",
+    "created": "2023-04-30T13:12:40.689Z",
+    "sortNum": 10000,
+    "folders": []
+  },
+  {
+    "_id": "2770a0ca-16f2-4a63-8105-a2a4d9ff66a0",
+    "colName": "Project Server",
+    "created": "2023-04-30T13:50:30.561Z",
+    "sortNum": 20000,
+    "folders": []
+  }
+]
