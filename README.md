@@ -115,4 +115,4 @@ Alternatively patterns targeting test files can be removed from the sub modules'
 
 ### What is the `thunder-tests` directory?
 
-`thunder-tests` refers to a set of E2E tests which tests the different servers' endpoints from the outside using thunderbird. It has also been used to generate the documentation found in Appendix B.
+`thunder-tests` refers to a set of E2E tests which tests the different servers' endpoints from the outside using thunderclient. It has also been used to generate the documentation found in Appendix B.
