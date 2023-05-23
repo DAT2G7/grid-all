@@ -1,4 +1,4 @@
-# No shebang for attempted system independence
+#!/bin/sh
 echo "Setting up all sub-repositories of the grid"
 
 # install node_modules
@@ -7,3 +7,4 @@ npm install
 npm --prefix ./grid-core install ./grid-core
 npm --prefix ./grid-project install ./grid-project
 npm --prefix ./grid-server install ./grid-server
+npm --prefix ./grid-extension install ./grid-extension
