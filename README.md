@@ -58,7 +58,7 @@ Windows users with bash enabled can use the unix setup script with the bash comm
 bash ./setup.sh
 ```
 
-### Manual set up
+### Manual setup
 
 Setting up submobules manually requires entering each sub-module directory
 
