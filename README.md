@@ -6,17 +6,17 @@
 
 # grid-all
 
-This repository contains all the code accompanying cs-23-DAT-2-07's P2 project report
+This repository contains all the code accompanying cs-23-DAT-2-07's P2 report
 
 This is a wrapper of the underlying server, project, core and extension repositories. All configuration is handled as sub-module level to keep them self-contained.
 
-Guides for using each sub-module are also self-contained. Check the respective modules `README.md` for more info
+A short setup guide is included further down in this document. Full guides for using and developing each sub-module are also self-contained within their respective repositories. Check the respective module's `README.md` for more info. The extension is only described in its own repository, as it works independently of the rest of the codebase.
 
-A vscode workspace organising the full project has been provided. See `grid-all.code-workspace`
+A vscode workspace organising the full codebase has been provided. See `grid-all.code-workspace`.
 
 ## Prerequisites
 
-The project relies on `node` and `npm` already being installed on the host machine. `npm` alternatives like `yarn` or `pnpm` should also work, but no lock file has been supplied. The setup script described below also assumes `npm` is installed.
+The codebase relies on `node` and `npm` already being installed on the host machine. `npm` alternatives like `yarn` or `pnpm` should also work, but no lock file has been supplied. The setup script described below also assumes `npm` is installed.
 
 ## Getting started
 
@@ -40,7 +40,7 @@ This does not clone new submodules, but only updates existing ones.
 
 After cloning with the recursive submodule command, sub-module dependencies have to be installed. A script `setup.sh` has been supplied for this purpose with commands for running it listed below:
 
-#### Unix
+### Unix
 
 Add execution permission and run the script
 
@@ -48,7 +48,7 @@ Add execution permission and run the script
 chmod +x ./setup.sh && ./setup.sh
 ```
 
-#### Windows
+### Windows
 
 Windows users with bash enabled can use the unix setup script with the bash command
 
@@ -56,11 +56,48 @@ Windows users with bash enabled can use the unix setup script with the bash comm
 bash ./setup.sh
 ```
 
-#### Manual set up
+### Manual set up
 
 Setting up submobules manually requires entering each sub-module directory
 
 Alternatively it is required to cd into each sub-module and install node modules manually.
+
+## Running the codebase
+
+Running the codebase has 3 moving parts. First the core in [./grid-core](./grid-core/) has to be build and copied to the project server in `./grid-project`. Then the grid server in `./grid-server` has to be started, and lastly the project server should be started. The project server then automatically registers a couple of jobs with the grid server.
+
+When all that is done, the web page for the grid server is ready. By default it should be served on http://localhost:3000.
+
+### Step by step:
+
+This guide assumes sub modules have already been set up according to the `Setting up Submodules` section of this document.
+
+Start by building the core and copying it to `./grid-project`
+
+```sh
+cd ./grid-core
+npm run build
+cp ./dist/bundle.js ../grid-project/bundle.js
+cd ..
+```
+
+Then build and start the grid server
+
+```sh
+cd ./grid-server
+npm run build
+npm run start
+```
+
+In a new terminal, build and start the project server
+
+```sh
+cd ./grid-project
+npm run build
+npm run start
+```
+
+Now the page can be opened on http://localhost:3000
 
 ## FAQ
 
