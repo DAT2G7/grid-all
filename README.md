@@ -8,7 +8,7 @@ Extension does not have any pipelines.
 
 # grid-all
 
-This repository contains all the code accompanying cs-23-DAT-2-07's P2 report
+This repository contains all the code accompanying AAU cs-23-DAT-2-07's P2 report
 
 This is a wrapper of the underlying server, project, core and extension repositories. All configuration is handled as sub-module level to keep them self-contained.
 
