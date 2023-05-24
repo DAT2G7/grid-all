@@ -72,7 +72,7 @@ When all that is done, the web page for the grid server is ready. By default it 
 
 ### Step by step:
 
-This guide assumes sub modules have already been set up according to the `Setting up Submodules` section of this document.
+This guide assumes sub modules have already been set up according to the [Setting up submodules](#setting-up-submodules) section of this document.
 
 Start by building the core and copying it to `./grid-project`
 
