@@ -28,16 +28,6 @@ Clone repository with sub-modules
 git clone https://github.com/DAT2G7/grid-all --recurse-submodules
 ```
 
-## Pulling updates
-
-To get the most recent commit of all sub-modules use
-
-```bash
-git submodule update --recursive --remote
-```
-
-This does not clone new submodules, but only updates existing ones.
-
 ## Setting up submodules
 
 After cloning with the recursive submodule command, sub-module dependencies have to be installed. A script `setup.sh` has been supplied for this purpose with commands for running it listed below:
