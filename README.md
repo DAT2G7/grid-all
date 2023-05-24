@@ -84,7 +84,7 @@ npm run start
 In a new terminal, build and start the project server
 
 ```sh
-cd ./grid-project
+cd ./grid-all/grid-project
 npm run build
 npm run start
 ```
