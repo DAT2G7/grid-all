@@ -81,10 +81,10 @@ npm run build
 npm run start
 ```
 
-In a new terminal, build and start the project server
+In a new terminal from the repository root, build and start the project server
 
 ```sh
-cd ./grid-all/grid-project
+cd ./grid-project
 npm run build
 npm run start
 ```
